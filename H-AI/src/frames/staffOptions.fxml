@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="staffOptions" blendMode="SRC_ATOP" cache="true" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="400.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <JFXTabPane prefHeight="400.0" prefWidth="652.0" tabMinWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-52.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab style="-fx-background-color: teal;" text="Register Student">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="back" layoutX="434.0" layoutY="306.0" onAction="#loadHome" style="-fx-cursor: hand;" styleClass="Button" stylesheets="@../application/application.css" text="Back">
+                           <effect>
+                              <DropShadow color="#00000081" />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton fx:id="createStudentSubmit" layoutX="272.0" layoutY="306.0" onAction="" style="-fx-cursor: hand;" styleClass="Button" stylesheets="@../application/application.css" text="Submit">
+                           <effect>
+                              <DropShadow color="#0000007a" />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXPasswordField fx:id="studPass" focusColor="TEAL" layoutX="35.0" layoutY="164.0" prefWidth="200.0" promptText="Password" styleClass="fields" stylesheets="@../application/application.css" />
+                        <JFXComboBox fx:id="studProg" layoutX="316.0" layoutY="37.0" prefWidth="200.0" promptText="Programme Type" visibleRowCount="5" />
+                        <JFXTextField fx:id="studLN" focusColor="TEAL" layoutX="35.0" layoutY="121.0" prefWidth="200.0" promptText="Last Name" unFocusColor="#4d4d4d7d" />
+                        <JFXTextField fx:id="studFN" focusColor="TEAL" layoutX="35.0" layoutY="80.0" prefWidth="200.0" promptText="First Name" stylesheets="@../application/application.css" unFocusColor="#4d4d4d7d" />
+                        <JFXTextField fx:id="studId" alignment="CENTER" focusColor="TEAL" labelFloat="true" layoutX="35.0" layoutY="33.0" prefWidth="200.0" promptText="Identification Number" styleClass="fields" stylesheets="@../application/application.css" unFocusColor="#4d4d4d74">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="studAdd" focusColor="TEAL" layoutX="35.0" layoutY="213.0" prefWidth="200.0" promptText="Address" unFocusColor="#4d4d4d7d" />
+                        <JFXTextField fx:id="studCont" focusColor="TEAL" layoutX="35.0" layoutY="256.0" prefWidth="200.0" promptText="Contact" unFocusColor="#4d4d4d7d" />
+                        <DatePicker fx:id="studDate" layoutX="316.0" layoutY="109.0" prefHeight="25.0" prefWidth="201.0" promptText="Select Date" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: teal;" text="Program Administration">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTabPane prefHeight="365.0" prefWidth="652.0" tabMinWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <tabs>
+                              <Tab style="-fx-background-color: teal;" text="Program Details">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab style="-fx-background-color: teal;" text="Add Course">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab style="-fx-background-color: teal;" text="Fee Breakdown">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                           </tabs>
+                        </JFXTabPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

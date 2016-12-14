@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane blendMode="SRC_ATOP" cache="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="400.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="600.0" />
+      <JFXTabPane blendMode="SCREEN" layoutX="207.0" layoutY="175.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="400.0" prefWidth="657.0" side="BOTTOM" tabMinWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-57.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab style="-fx-background-color: teal;" text="ADMINISTRATOR">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXPasswordField fx:id="adminPass" focusColor="TEAL" layoutX="125.0" layoutY="167.0" maxWidth="347.0" minWidth="258.0" prefHeight="31.0" prefWidth="338.0" promptText="PASSWORD" />
+                        <JFXTextField fx:id="adminUser" focusColor="TEAL" labelFloat="true" layoutX="119.0" layoutY="90.0" maxWidth="347.0" minWidth="289.0" prefHeight="45.0" prefWidth="338.0" promptText="USERNAME">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton fx:id="admin" layoutX="211.0" layoutY="235.0" onAction="#adminCheck" prefHeight="74.0" prefWidth="154.0" ripplerFill="#60abf2" style="-fx-background-color: teal;" stylesheets="@../application/application.css" text="SUBMIT" textFill="WHITE">
+                           <effect>
+                              <DropShadow color="#0000007b" />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab style="-fx-background-color: teal;" text="STAFF">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXPasswordField fx:id="staffPass" focusColor="TEAL" layoutX="151.0" layoutY="165.0" maxWidth="347.0" minWidth="258.0" prefHeight="31.0" prefWidth="338.0" promptText="PASSWORD">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXPasswordField>
+                        <JFXTextField fx:id="staffUser" focusColor="TEAL" labelFloat="true" layoutX="151.0" layoutY="99.0" maxWidth="347.0" minWidth="289.0" prefHeight="45.0" prefWidth="338.0" promptText="IDENTIFICATION NUMBER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton fx:id="staffSubmit" layoutX="223.0" layoutY="246.0" onAction="#staffCheck" prefHeight="74.0" prefWidth="154.0" ripplerFill="#60abf2" style="-fx-background-color: teal;" stylesheets="@../application/application.css" text="SUBMIT" textFill="WHITE">
+                           <effect>
+                              <DropShadow color="#0000007b" />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab style="-fx-background-color: teal;" text="STUDENT">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="studSubmit" layoutX="226.0" layoutY="249.0" onAction="#studCheck" prefHeight="74.0" prefWidth="154.0" ripplerFill="#60abf2" style="-fx-background-color: teal;" stylesheets="@../application/application.css" text="SUBMIT" textFill="WHITE">
+                           <effect>
+                              <DropShadow color="#0000007b" />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXTextField fx:id="studUser" focusColor="TEAL" labelFloat="true" layoutX="160.0" layoutY="98.0" maxWidth="347.0" minWidth="289.0" prefHeight="45.0" prefWidth="338.0" promptText="IDENTIFICATION NUMBER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXPasswordField fx:id="studPass" focusColor="TEAL" layoutX="160.0" layoutY="165.0" maxWidth="347.0" minWidth="258.0" prefHeight="31.0" prefWidth="338.0" promptText="PASSWORD">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXPasswordField>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

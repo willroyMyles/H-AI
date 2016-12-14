@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+  <children>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="400.0" layoutX="0.0" layoutY="0.0" stroke="WHITE" strokeType="INSIDE" width="600.0" />
+      <JFXButton fx:id="admin" layoutX="131.0" layoutY="239.0" onAction="#adminCheck" prefHeight="74.0" prefWidth="154.0" ripplerFill="#60abf2" style="-fx-background-color: teal;" stylesheets="@../application/application.css" text="SUBMIT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#0000007b" />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="adminBack" layoutX="324.0" layoutY="239.0" onAction="#loadHome" prefHeight="74.0" prefWidth="154.0" ripplerFill="#60abf2" style="-fx-background-color: teal;" stylesheets="@../application/application.css" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#0000007a" />
+         </effect>
+      </JFXButton>
+      <JFXTextField fx:id="adminUser" focusColor="TEAL" labelFloat="true" layoutX="140.0" layoutY="84.0" maxWidth="347.0" minWidth="289.0" prefHeight="45.0" prefWidth="338.0" promptText="USERNAME">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="adminPass" focusColor="TEAL" layoutX="140.0" layoutY="161.0" maxWidth="347.0" minWidth="258.0" prefHeight="31.0" prefWidth="338.0" promptText="PASSWORD" />
+      <Label layoutX="135.0" layoutY="330.0" text="ADMIN LOGIN" textFill="#00000013">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+  </children>
+</AnchorPane>

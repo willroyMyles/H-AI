@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="pane" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <JFXTextField fx:id="staffId" alignment="CENTER" focusColor="TEAL" labelFloat="true" layoutX="100.0" layoutY="146.0" prefWidth="200.0" promptText="Identification Number" styleClass="fields" stylesheets="@../application/application.css" unFocusColor="#4d4d4d74">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="staffFN" focusColor="TEAL" layoutX="100.0" layoutY="194.0" prefWidth="200.0" promptText="First Name" stylesheets="@../application/application.css" unFocusColor="#4d4d4d7d" />
+      <JFXTextField fx:id="staffLN" focusColor="TEAL" layoutX="100.0" layoutY="239.0" prefWidth="200.0" promptText="Last Name" unFocusColor="#4d4d4d7d" />
+      <JFXComboBox fx:id="staffFacualty" layoutX="100.0" layoutY="332.0" prefWidth="200.0" promptText="Facualty" visibleRowCount="5" />
+      <JFXPasswordField fx:id="staffPW" focusColor="TEAL" layoutX="100.0" layoutY="285.0" prefWidth="200.0" promptText="Password" styleClass="fields" stylesheets="@../application/application.css" />
+      <JFXDatePicker fx:id="staffDate" layoutX="100.0" layoutY="428.0" prefHeight="25.0" prefWidth="200.0" promptText="Select Date" />
+      <JFXComboBox fx:id="staffDept" layoutX="100.0" layoutY="374.0" prefHeight="25.0" prefWidth="200.0" promptText="Department" />
+      <JFXButton fx:id="createStaffSubmit" layoutX="29.0" layoutY="486.0" onAction="#createStaff" style="-fx-cursor: hand;" styleClass="Button" stylesheets="@../application/application.css" text="Submit">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#0000007a" />
+         </effect></JFXButton>
+      <JFXButton fx:id="staffCreationBack" layoutX="223.0" layoutY="486.0" onAction="#loadHome" style="-fx-cursor: hand;" styleClass="Button" stylesheets="@../application/application.css" text="Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow color="#00000081" />
+         </effect></JFXButton>
+   </children>
+</AnchorPane>
